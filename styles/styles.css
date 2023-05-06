@@ -27,14 +27,14 @@
     padding: 0;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-
-    /* border: 2px dotted hotpink; */
 }
 
 body {
     font-family: var(--ff-body);
     font-size: 1em;
 }
+
+/* Header - Hero Styles */
 
 .header {
     display: flex;
@@ -50,7 +50,7 @@ body {
     align-items: center;
     
     width: 90vw;
-    padding: 1rem 0;
+    padding: 2rem 0 0 0;
     background-color: #fff;
 }
 
@@ -73,7 +73,7 @@ body {
     align-items: center;
 
     text-align: center;
-    width: 80vw;
+    width: 70vw;
 }
 
 .header-title-text {
@@ -86,7 +86,7 @@ body {
 .header-para-text {
     margin-top: 1rem;
     color: var(--col-sec-dark-cyan);
-    width: 50vw;
+    width: 40vw;
 }
 
 .hero-cta-btn {
@@ -106,15 +106,22 @@ body {
     margin-top: 4rem;
 }
 
+/* User Data styles */
+
+
 .usage-data {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    flex: 1;
 
+    margin: 0 auto;
     margin-top: 4rem;
     color: var(--col-sec-dark-cyan);
     padding: 3rem 0;
-    width: 60%;
+    min-width: 60%;
 }
 
 .usage-data h2 {
@@ -126,3 +133,194 @@ body {
     font-size: 1em;
     color: var(--col-sec-light-blue);
 }
+
+/* Company Aim styles */
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5rem;
+
+    padding: 4rem 6rem;
+    width: 100%;
+}
+
+.company-aim {
+    max-width: 100%;
+    margin-top: 4rem;
+}
+
+
+.card-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    background-color: var(--col-sec-pale-blue);
+    width: 100%;
+}
+
+.card-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    width: 100%;
+}
+
+.card-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    background-color: var(--col-sec-pale-blue);
+    width: 100%;
+}
+
+
+.card-text h3 {
+    font-size: 1.8em;
+    font-family: var(--ff-header);
+    margin-bottom: .8rem;
+}
+
+.card-text p {
+    width: 100%;
+}
+
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wave-top img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -1rem;
+}
+
+.wave-bottom img {
+    width: 100%;
+    height: auto;
+    margin-top: -1rem;
+}
+
+
+/* Call to action styles */
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 6rem 0;
+}
+
+.cta h2 {
+    text-align: center;
+    font-size: 2.21em;
+}
+
+/* Footer styles */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--col-sec-dark-cyan);
+    padding: 10rem 0;
+    color: var(--col-sec-pale-blue);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: baseline;
+
+    max-width: 80%;
+}
+
+.footer-wave {
+    width: 100vw;
+}
+
+.footer-wave img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -.3rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem .5rem;
+    margin-top: 1.5rem;
+}
+
+.contact svg {
+    transform: scale(.7);
+    transform-origin: 0%;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.newsletter h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.newsletter p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscribe {
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+input[type=email] {
+    padding: .5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+input[type=email]:focus {
+    outline: 1px solid var(--col-prim-pink);
+    border: 1px solid var(--col-prim-pink);
+}
+
+input[type=submit] {
+    padding: .5rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--col-prim-pink);
+    color: var(--col-sec-pale-blue);
+}
+
