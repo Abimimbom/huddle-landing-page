@@ -67,6 +67,10 @@ body {
     border-radius: 80px;
 }
 
+.cta-btn:hover {
+    cursor: pointer;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -98,6 +102,13 @@ body {
     font-weight: var(--fw-body-semibold);
     font-size: 1em;
     border: none;
+    box-shadow: 0 0 10px var(--col-sec-light-blue);
+}
+
+.hero-cta-btn:hover {
+    background-color: hsla(322, 100%, 72%);
+    transition: .2s all ease-in 0s;
+    cursor: pointer;
 }
 
 .hero-img img {
@@ -284,6 +295,26 @@ body {
     justify-content: center;
     gap: 1rem .5rem;
     margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+
+    margin-top: 4rem;
+    transform: scale(1.5);
+    transform-origin: 0%;
+}
+
+.social-icons path:hover {
+    fill: aqua;
+}
+
+.social-icons a {
+    display: block;
+    transform: scale(.7);
 }
 
 .contact svg {
@@ -348,6 +379,12 @@ input[type=email], input[type=submit] {
     /* width: 100%; */
 }
 
+[type=submit]:hover {
+    background-color: hsla(322, 100%, 75%);
+    transition: .2s all ease-in 0s;
+    cursor: pointer;
+}
+
 
 
 /* Media queries */
@@ -359,12 +396,17 @@ input[type=email], input[type=submit] {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     .main {
         width: 100vw;
         height: 100vh;
     }
+
+    .hero {
+        width: 80vw;
+    }
+
     .logo {
         width: 8rem;
         height: auto
@@ -375,13 +417,14 @@ input[type=email], input[type=submit] {
     }
 
     .header-title-text {
-        font-size: 1.8em;
-        width: 90vw;
+        font-size: 2.5em;
+        width: 80vw;
     }
 
     .header-para-text {
-        font-size: .8em;
-        width: 80vw;
+        font-size: 1.1em;
+        width: 60vw;
+        line-height: 1.5;
     }
 
     .hero-cta-btn {
@@ -390,23 +433,25 @@ input[type=email], input[type=submit] {
     }
 
     .hero-img img {
-        width: 120%;
-        /* height: auto; */
+        margin-top: 8rem;
+        width: 100%;
+        height: auto;
     }
 
     .usage-data {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        /* width: 80vw; */
-        padding: 8rem 4rem;
+        width: 80vw;
+        padding: 8rem 7rem;
     }
 
     .cards {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 4rem;
+        padding: 8rem 4rem;
+        line-height: 1.5;
     }
 
     .card-text {
@@ -430,6 +475,15 @@ input[type=email], input[type=submit] {
 
     .cta h2 {
         font-size: 1.8em;
+    }
+
+    .newsletter p {
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+
+    .contact p {
+        font-size: 1.2em;
     }
 }
 
